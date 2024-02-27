@@ -1,4 +1,3 @@
-
 use HOWeatherAppDB
 GO
 
@@ -79,4 +78,17 @@ VALUES
 ('Hurricane', '2005-08-23', 5),
 ('Wildfire', '2021-12-15', 4),
 ('Earthquake', '1952-07-21', 7)
+GO
+
+INSERT INTO ForecastvsActual(CID, FCTemp, ATemp)
+VALUES
+(8, 75, 72),
+(9, 102, 95),
+(1, 62, 55),
+(2, 73, 73),
+(5, 80, 89),
+(3, 77, 74),
+(4, 40, 32),
+(10, 69, 76)
+
 GO
