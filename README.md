@@ -1,22 +1,20 @@
-# MIS353TeamProject
+# MIS353TeamProject HW4
 
-When brainstorming our project direction, we essentially combined all of our ideas together into 1 project that documents the 60 day forecast, recent natural disasters in relevent cities across America, and the difference in the projected forecast vs how the weather actually was that day. We are setting this website up to be a good reasource for homeowners to determine the average weather in their reigion, accuracy of said forecast in that region, as well as giving insight through documentation on the frequency of natural disasters in the current area to determine whether or not it is a safe area to live.
+Curtis' APIs
+* GetCityDisasters
+  When given a CityID it returns every natural disaster that's happened there along with the type of disaster (Ex. Hurricane, Tornado, Wildfire) and the date it happened.
+  
+* AddDisaster
+  When given a CityID, Natural Disaster Type, and Date it occured, it adds the information to the database and outputs a 1 if successful.
 
-We seperated the six stored procedures by two per person based off of their original idea.
 
-Skylar's two SPs
+# Planned Webpages
 
--Adding weather data for months > 6
--Pull 6-month weather forecasts
+* View Disaster by City
+  A page where a user can go and enter the name of a city and state (Which will be converted into the CityID), after that all disasters that have taken place in that city will be counted and that will be displayed at the top. A list of all disaster with the most recent being displayed at the top, will be posted under the overall count.
 
-Curtis' two SPs
+* Add a Disaster
+  A page where a user will be able to go and enter the location, type, and date of a disaster after it happens. This is meant to be used (hopefully) rarely but will be the main way Natural Disasters are added into the database. A similar list to the 'View Disaster By City' page will be displayed afterward so the user can verify a successful insertion.
 
--Updating natural disaster info
--Pull natural disaster history
-
-Philip's two SPs
-
--forecasts vs actual
--creating new data for “forecasts vs actual”
-
-We used wunderground.com and Wikipedia's list of natural disasters in the United States at https://en.wikipedia.org/wiki/List_of_natural_disasters_in_the_United_States. We did not use ChatGPT to create any of the code used.
+* View Aid Organizations by State
+  A page where a user will be able to go and enter a state, a list of Disaster Relief organizations will be printed sorted by the highest rating at the top. The list will be taken from the Catastrophe API, documentation can be found here https://documenter.getpostman.com/view/5841816/S17wM6DE. Any user will be able to find multiple aid organizations operating in their state/province if they need them.
