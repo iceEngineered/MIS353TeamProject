@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW4SARp2", "HW4SARp2\HW4SARp2.csproj", "{75C9267B-D7A2-4F9A-AE23-5D14CFFBFA9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75C9267B-D7A2-4F9A-AE23-5D14CFFBFA9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75C9267B-D7A2-4F9A-AE23-5D14CFFBFA9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75C9267B-D7A2-4F9A-AE23-5D14CFFBFA9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75C9267B-D7A2-4F9A-AE23-5D14CFFBFA9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78A98B72-F561-4EFE-9027-C68ECF9312C4}
+	EndGlobalSection
+EndGlobal
