@@ -18,6 +18,17 @@ Shows all cities available and lets users choose the CID they want to look into.
 
 Displays the weather forecasts during different months; In this example, August. 
 
+Philip's APIs
+
+GetForecasts
+
+When given a CityID and date it returns every predicted forecast that has been registered along with the actual forecast.
+
+AddForecast
+
+When given a CityID and Date, it adds the actual and predicted forecast to the database and outputs a 1 if successful.
+
+
 # Planned Webpages
 
 * View Disaster by City
@@ -35,6 +46,10 @@ Displays the weather forecasts during different months; In this example, August.
 * View Aid Organizations by State
   
   A page where a user will be able to go and enter a state, a list of Disaster Relief organizations will be printed sorted by the highest rating at the top. The list will be taken from the Catastrophe API, documentation can be found here https://documenter.getpostman.com/view/5841816/S17wM6DE. Any user will be able to find multiple aid organizations operating in their state/province if they need them.
+
+    *Forecast rating
+
+  A page that you can put in your zipcode and be able to see a 7-Day forecast for your town, followed by what was originally reported by a weather service to see how much that forecast has changed overtime. It will then also give a forecast rating based off of the accuracy of the original forecast prediction.
 
   *Privacy Policy
 
