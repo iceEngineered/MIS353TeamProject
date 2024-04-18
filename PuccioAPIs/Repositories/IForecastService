@@ -1,0 +1,10 @@
+using PuccioAPIs.Entities;
+
+namespace PuccioAPIs.Repositories
+{
+    public interface IForecastService
+    {
+        public Task<List<Forecast>> GetForecast(int CID);
+        Task<int> AddCast(Forecast forecast);
+    }
+}

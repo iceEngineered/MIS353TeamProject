@@ -1,0 +1,33 @@
+using PuccioAPIs.Data;
+using PuccioAPIs.Entities;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
+
+namespace PuccioAPIs.Repositories
+{
+    public class ForecastService : IForecastService
+    {
+        private readonly DbContextClass _dbContextClass;
+        public ForecastService(DbContextClass dbContextClass)
+        {
+            _dbContextClass = dbContextClass;
+        }
+
+
+
+        public async Task<List<Forecast>> GetForecast(int CID)
+        {
+            var param = new SqlParameter("@CID", CID);
+            var cast = await Task.Run(() => _dbContextClass.Forecast.FromSqlRaw("exec spForecast @CID", param).ToListAsync());
+            return cast;
+        }
+        public async Task<int> AddCast(Forecast forecast)
+        {
+            var CID = new SqlParameter("@CID", forecast.CID);
+            var FCTemp = new SqlParameter("@FCTemp", forecast.FCTemp);
+            var ATemp = new SqlParameter("@ATemp", forecast.ATemp);
+            var cast = await Task.Run(() => _dbContextClass.Database.ExecuteSqlRaw("exec spAddForecast @CID, @FCTemp, @ATemp", CID, FCTemp, ATemp));
+            return cast;
+        }
+    }
+}
