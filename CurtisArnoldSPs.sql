@@ -9,7 +9,7 @@ Create proc spAddNatDisaster
  @NDDate date --START date of disaster (if it even spans multiple dates)
 AS
 BEGIN
-INSERT INTO NaturalDisasterHistory([CID]
+INSERT INTO Disaster([CID]
       ,[NDType]
       ,[NDDate])
 Values(@CityID
@@ -28,7 +28,7 @@ CREATE PROCEDURE spGetDisasterEventsByCity
     @CID int
 AS
 BEGIN
-    SELECT CID, NDDate, NDType  FROM NaturalDisasterHistory WHERE CID = @CID;
+    SELECT CID, NDDate, NDType  FROM Disaster WHERE CID = @CID;
 END
 GO
 
