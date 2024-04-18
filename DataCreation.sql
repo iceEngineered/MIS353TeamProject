@@ -69,7 +69,7 @@ VALUES
 GO
 
 
-INSERT INTO NaturalDisasterHistory(NDType, NDDate, CID)
+INSERT INTO Disaster(NDType, NDDate, CID)
 VALUES
 ('Winter Storm', '2021-2-17', 9),
 ('Tornado', '1980-06-03', 1),
