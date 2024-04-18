@@ -1,0 +1,45 @@
+﻿@page
+@model MISTeamProject.Pages.AddDisasterModel
+
+@{
+    ViewData["Title"] = "AddDisaster";
+}
+
+<h1>AddDisaster</h1>
+
+<h4>Disaster</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <p> If entered successfully you will be redirected back to the homepage</p>
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Disaster.CID" class="control-label"></label>
+                <input asp-for="Disaster.CID" class="form-control" />
+                <span asp-validation-for="Disaster.CID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Disaster.NDType" class="control-label"></label>
+                <input asp-for="Disaster.NDType" class="form-control" />
+                <span asp-validation-for="Disaster.NDType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Disaster.NDDate" class="control-label"></label>
+                <input asp-for="Disaster.NDDate" class="form-control" />
+                <span asp-validation-for="Disaster.NDDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

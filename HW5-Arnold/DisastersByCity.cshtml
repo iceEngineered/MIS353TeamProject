@@ -1,0 +1,35 @@
+﻿
+@page
+@model DisastersByCityModel
+@{
+    ViewData["Title"] = "DisastersByCity";
+}
+<!-- Given the DisastersByCity.cshtml.cs file to chatgpt with this "Take this code, add a form to allow a user to enter a CID and button that only displays entries which match that CID" and a few modifications to make sure things were named the same
+    I gained the ability to filter by CID instead of displaying every disaster
+-->
+<h1>Disasters By City</h1>
+
+<form method="get">
+    <input type="text" name="CID" placeholder="Enter City ID" />
+    <button type="submit">Search</button>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>CID</th>
+            <th>Disaster Type</th>
+            <th>Disaster Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var disaster in Model.Disaster)
+        {
+            <tr>
+                <td>@disaster.CID</td>
+                <td>@disaster.NDType</td>
+                <td>@disaster.NDDate</td>
+            </tr>
+        }
+    </tbody>
+</table>
