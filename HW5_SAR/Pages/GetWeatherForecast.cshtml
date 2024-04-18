@@ -1,0 +1,54 @@
+﻿@page
+@model HW5_SAR.Pages.GetWeatherForecastModel
+@{
+}
+<h1>Weather Forecast Details</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Forecast</title>
+</head>
+<body>
+  
+    <div id = "WF" ></div>
+    <div id="weatherInfo"></div>
+    <script>
+        
+       async function getWeatherData(cityId) {
+            const response = await fetch(`https://localhost:7242/api/WF/${cityId}`);
+                const data = await response.json();
+           var innerHtml = '<table class = "table"> <tr><th>City</th><th>Weather Forecasts</th></tr>';
+            for (let i = 0; i < data.length; i++) {
+                innerHtml += `<tr><td>${data[i].cid}</td><td>${data[i].wfTemp}</td></tr>`
+            }
+            innerHtml += "</table>";
+            document.getElementById('WF').innerHTML = innerHtml;
+            document.getElementById('WF').style.visibility = "visible";
+            var cityData = {
+                "1": "Weather information for Morgantown, WV", 
+                "2": "Weather information for Miami, FL",
+                "3": "Weather information for Tulsa, OK",
+                "4": "Weather information for Kansas City, KS",
+                "5": "Weather information for New Orleans, LA",
+                "6": "Weather information for Maui, HI",
+                "7": "Weather information for San Diego, CA",
+                "8": "Weather information for Oklahoma City, OK",
+                "9": "Weather information for Houston, TX",
+                "10": "Weather information for Huntsville, AL"
+                
+            };
+
+            //return cityData[cityId] || "Weather information not available";
+            document.getElementById("weatherInfo").innerHTML = cityData[cityId]
+        }
+
+        var urlParams = new URLSearchParams(window.location.search);
+        var cityId = urlParams.get('cityId');
+
+        var weatherInfoDiv = document.getElementById("weatherInfo");
+       // weatherInfoDiv.innerText = getWeatherData(cityId);
+        getWeatherData(cityId);
+    </script>
+</body>
+</html>
+
