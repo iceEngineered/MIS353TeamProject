@@ -31,13 +31,13 @@ GO
 
 
     
-CREATE TABLE [dbo].[NaturalDisasterHistory](
+CREATE TABLE [dbo].[Disaster](
 [CID] int NOT NULL FOREIGN KEY REFERENCES City(CID),
 [NDType] [nvarchar] (max) NOT NULL,
 [NDDate] [date] NOT NULL)
 
 GO
     
-ALTER TABLE NaturalDisasterHistory ADD CONSTRAINT PK
+ALTER TABLE Disaster ADD CONSTRAINT PK
   PRIMARY KEY (CID, NDDate)
 GO
