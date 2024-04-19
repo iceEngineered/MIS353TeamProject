@@ -3,10 +3,10 @@
 ## Skylar's  /  City and Weather Forecast Razor Pages
 ##### The home page welcomes the user and shifts the homeowner's attention to a link that greets them with a dropdown menu. The homeowner can choose whichever city they desire to get the weather forecast for that location. A table is prompted after selection, which gives them the cityID and the WeatherForecast. This data comes from my APIs completed for HW4.
 
-###APIs
+### APIs
 #### GetCityData
 ##### Pulls the data from the SQL server to give the user access to the available city IDs to search.
-####GetWeatherForecasts
+#### GetWeatherForecasts
 ##### Gets database information that connects the city ID to the weather forecasts for that city.
 ###### Sources used: Chat GPT
 ###### Prompts used: write javascript code for a razor page that asks the user to enter a city id from a dropdown list
