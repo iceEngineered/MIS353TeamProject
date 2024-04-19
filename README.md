@@ -1,3 +1,6 @@
+##### Deployment guide: First, implement stored procedures on Microsoft SQL Server to connect to your APIs listed in HW4. Create a database to store stored procedures (DbMaker.sql). Copy & paste pages from HW4 and HW5 files respectively into Microsoft Virtual Studio. Run HW4 and 5 simultaneously. If you run into errors, refer to Joshua Meadows' GitHub repository, MIST 353 TravelSite2. 
+
+
 # Homework 5
 
 ## Skylar's  /  City and Weather Forecast Razor Pages
@@ -20,5 +23,3 @@ Lets a user add a disaster by entering CityID NDDate NDType
 ### Privacy Policy
 Makes it clear any information entered on the AddDisaster page is stored, and that we track nothing else.
 
-
-##### Deployment guide: First, implement stored procedures on Microsoft SQL Server to connect to your APIs listed in HW4. Create a database to store stored procedures. Copy & paste pages from HW4 and HW5 files respectively into Microsoft Virtual Studio. Run HW4 and 5 simultaneously. If you run into errors, refer to Joshua Meadows' GitHub repository, MIST 353 TravelSite2. 
