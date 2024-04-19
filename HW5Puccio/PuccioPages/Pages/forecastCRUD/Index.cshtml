@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Hi Homeowner!</h1>
+    <h2>We're glad you're here.</h2>
+    <p>Find the city you're looking for <a href="/GetCityDetails"> here.<a></p>
+    <p>Find disasters and filter by City with CityID here <a href="/DisastersByCity"> here.<a></p>
+<p>Add A disaster that just happened to the database here <a href="/AddDisaster"> here.<a></p>
+    <p>Look at how accurate your weatherman is! Click <a asp-page="/GetCID">here.</a></p> and select your city from the dropdown!
+    <p>Add Your city's forecast as well as the actual Temperature to hold your weather guy accountable here <a href="/forecastCRUD/Create"> here.<a></p>
+
+</div>
