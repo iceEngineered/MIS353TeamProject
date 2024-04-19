@@ -23,3 +23,11 @@ Lets a user add a disaster by entering CityID NDDate NDType
 ### Privacy Policy
 Makes it clear any information entered on the AddDisaster page is stored, and that we track nothing else.
 
+## Philip's  /  GetWeatherForecast and AddForecast Razor Pages
+##### GetWeatherForecast Supposed to pull the api data from the SQL server to give the user a table of instances where that city got different Forecasts, and what they were originally predicted to be. Was supposed to have the same menu Skylar had for her getForecast but use it differently to keep the feel and structure of the website the same, using the dropdown menu, but i couldn't quite get the API to connect and display on the page. Input was supposed to be the CID from the dropdown used in the URL to take the user to a table with that CID and display every instance that CID was used in.
+
+####AddForecast (Create) Lets a user add an instance of a forecast and an actual temp by entering CID, FCTemp ATemp.
+### Sources used: Recorded Lectures, ChatGPT when encountering errors, Used Skylar's GetCityData and changed the return value to give a different result from what her page did.
+##Prompts used: I am writing code to display different Forecasts in different cities in a table format. The Variables are CID, FCTemp, ATemp. I am also trying to retrieve the data from an API. How would I go about doing this?
+
+
