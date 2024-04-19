@@ -28,6 +28,6 @@ Makes it clear any information entered on the AddDisaster page is stored, and th
 
 AddForecast (Create) Lets a user add an instance of a forecast and an actual temp by entering CID, FCTemp ATemp.
 ### Sources used: Recorded Lectures, ChatGPT when encountering errors, Used Skylar's GetCityData and changed the return value to give a different result from what her page did.
-###Prompts used: I am writing code to display different Forecasts in different cities in a table format. The Variables are CID, FCTemp, ATemp. I am also trying to retrieve the data from an API. How would I go about doing this?
+### Prompts used: I am writing code to display different Forecasts in different cities in a table format. The Variables are CID, FCTemp, ATemp. I am also trying to retrieve the data from an API. How would I go about doing this?
 
 
